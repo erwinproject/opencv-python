@@ -2,9 +2,7 @@ import cv2
 import numpy as np
 
 videoCam = cv2.VideoCapture(1)
-videoCam.set(cv2.CAP_PROP_FRAME_WIDTH,720)
-videoCam.set(cv2.CAP_PROP_FRAME_HEIGHT,480)
-#videoCam.set(cv2.CV_CAP_PROP_FPS, 60)
+
 while True:
     cond, frame = videoCam.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
